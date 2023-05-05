@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahantesh SR- Web Development,Programer,FrontEnd Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Picture4.png" alt="logo" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Software Developer</p>
+                <h1>Hi,I'm <span>Mahantesh SR</span><br>from Banglore</h1>
+            </div>
+        </div>
+    </div>
+    <!---------about------------------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/about2.jpg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h3 class="sub-tittle">About Me</h3>
+                <p>I am an Bsc Gradugate Completed in the year 2022,Studied in Shree Siddartha First Grade College Tumkur under [TumkurUniversity].I am very intrested in Software Development Field and passionated in IT field 
+                    my Gradugate percentage is 74% .I skilled in FrontEnd and Backend Technology and also Database managment.I am Flexable Person the work under any technologies,and i have very 
+                    good understanding skill.
+                </p>
+                <div class="tab-tittles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experince')">Experince</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <p>SOFTWARE DEVELOPMENT</p>
+                        <li><span>Front end Development</span><br>HTML,CSS,JAVASCRIPT</li>
+                        <li><span>Backend Development</span><br>JAVA,Node.js</li>
+                        <li><span>Database Managment</span><br>MySql,Sql</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experince">
+                    <ul>
+                        <p>EXPERINCE AS SOFTWARE WEB DEVELOPMENT</p>
+                        <li><span>2022-23</span><br>Completed Full stack web development 6 months course <span>at Tap Academy</span></li>
+                        <li><span>2022</span><br>Created a simple login page</li>
+                        <li><span>2023</span><br>Created my Profile login page</li>
+                        <li><span>2023</span><br>Done a Mini-project of Tic-tac-toe game.</li>
+                        <li><span>2023</span><br>Created my Profile Portfolio</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <p>EDUCATION</p>
+                        <li><span>2023</span><br>Trained Software Web Development at TAP ACADEMY</li>
+                        <li><span>2022</span><br>BSC from SSIT Tumkur <span>TUMKUR UNIVERSITY</span></li>
+                        <li><span>2019</span><br>PUC at Siddaganga pu College</li>
+                        <li><span>2017</span><br>SSLC St Annes High School</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------services-->
+<div id="services">
+    <div class="container">
+        <h3 class="sub-tittle">My services</h3>
+        <div class="service-list">
+            <div>
+                <h2>Web Design</h2>
+                <p>Much intrested in Web development Front end and Backend and also in Database managment also</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Front End Development</h2>
+                <p>Higly focused in HTML CSS JAVASCRIPT And also in REACT.JS</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <h2>Back End Development</h2>
+                <p>Backend Focused in  JAVA NODE.JS</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
